@@ -1,0 +1,1 @@
+export async function main(ns) {var rshelld = ns.getPortHandle(1);rshelld.clear();while (rshelld.empty()){await ns.sleep(1);while (!rshelld.empty()){await ns.sleep(1);ns.tprintf(rshelld.read());rshelld.clear()}}}
